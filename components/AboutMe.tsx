@@ -24,14 +24,32 @@ export default function AboutMe() {
       </h2>
 
       {/* Two-column: bio left, socials right */}
-      <div className="flex flex-col md:flex-row justify-between mb-12 md:mb-16 animate-slide-up" style={{ animationDelay: "60ms" }}>
+      <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-10 animate-slide-up" style={{ animationDelay: "60ms" }}>
         <div className="md:w-5/12 mb-8 md:mb-0">
           <h3 className="text-xl md:text-3xl font-bold text-black mb-4 md:mb-6">Hi, I&apos;m Gilbert!</h3>
-          <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+          <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
             DevOps engineer with 5+ years building and operating cloud-native infrastructure.
             Deep expertise in Kubernetes, Terraform, and GitOps across multiple cloud providers.
             Focused on scalable platforms, CI/CD automation, and keeping systems reliable and cost-efficient.
           </p>
+          <div className="flex gap-3">
+            <a
+              href="/cv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 border border-black text-black text-sm font-medium rounded-full hover:bg-black hover:text-white transition-colors"
+            >
+              Resume ↓
+            </a>
+            <a
+              href="/cover-letter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 border border-zinc-300 text-zinc-600 text-sm font-medium rounded-full hover:border-black hover:text-black transition-colors"
+            >
+              Cover Letter ↓
+            </a>
+          </div>
         </div>
 
         <div className="flex flex-col gap-4 md:gap-6 md:w-5/12 md:items-end">
@@ -48,25 +66,6 @@ export default function AboutMe() {
             </a>
           ))}
 
-          {/* CV + Cover Letter */}
-          <div className="flex gap-3 mt-2 w-full md:w-auto md:justify-end">
-            <a
-              href="/gilbert-batista-cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 md:flex-none text-center px-5 py-2 border border-black text-black text-sm font-medium rounded-full hover:bg-black hover:text-white transition-colors"
-            >
-              Resume ↓
-            </a>
-            <a
-              href="/gilbert-batista-cover-letter.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 md:flex-none text-center px-5 py-2 border border-zinc-300 text-zinc-600 text-sm font-medium rounded-full hover:border-black hover:text-black transition-colors"
-            >
-              Cover Letter ↓
-            </a>
-          </div>
         </div>
       </div>
 
