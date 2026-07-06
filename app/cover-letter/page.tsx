@@ -4,8 +4,9 @@ export default function CoverLetter() {
   return (
     <div className="max-w-2xl mx-auto px-8 py-12 print:py-0 print:px-0 font-sans text-black bg-white">
 
-      {/* Print button */}
-      <div className="flex justify-end mb-8 print:hidden">
+      {/* Actions — hidden when printing */}
+      <div className="flex justify-between items-center mb-8 print:hidden">
+        <a href="/" className="text-sm text-zinc-400 hover:text-black transition-colors">← Back</a>
         <button
           onClick={() => window.print()}
           className="px-5 py-2 border border-black text-sm font-medium rounded-full hover:bg-black hover:text-white transition-colors cursor-pointer"
