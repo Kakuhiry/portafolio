@@ -3,7 +3,7 @@ import Image from "next/image";
 const skillGroups = [
   { label: "Clouds", skills: ["Azure", "AWS", "GCP", "DigitalOcean"] },
   { label: "Languages", skills: ["Golang", "Python", "JavaScript", "TypeScript", "SQL"] },
-  { label: "Orchestration & IaC", skills: ["Kubernetes (AKS, EKS, GKE, DOKS, k3s)", "Helm", "Terraform", "ArgoCD", "FluxCD"] },
+  { label: "Orchestration & IaC", skills: ["Kubernetes", "Helm", "Terraform", "ArgoCD", "FluxCD"] },
   { label: "CI/CD & Tools", skills: ["Azure DevOps", "GitHub Actions", "Entra ID", "Docker", "Linux", "Git", "HashiCorp Vault", "Cloudflare", "Traefik"] },
   { label: "Observability", skills: ["Azure Monitor", "Prometheus", "Grafana", "Loki"] },
 ];

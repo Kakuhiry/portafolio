@@ -22,8 +22,7 @@ export default function Education() {
           <span className="font-mono text-xs text-zinc-400 shrink-0">Nov 2017 – Jul 2022</span>
         </div>
         <p className="text-zinc-400 text-sm leading-relaxed">
-          Instituto Tecnológico de Santo Domingo — considered the best institute of technology
-          in the Dominican Republic.
+          Instituto Tecnológico de Santo Domingo — leading technology university in the Dominican Republic.
         </p>
       </div>
     </div>

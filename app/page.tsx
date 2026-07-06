@@ -4,12 +4,14 @@ import { useState } from "react";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Projects from "@/components/Projects";
 
-type Tab = "about" | "experience" | "education";
+type Tab = "about" | "experience" | "projects" | "education";
 
 const tabs: { id: Tab; label: string }[] = [
   { id: "about", label: "About me" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
 ];
 
@@ -39,6 +41,7 @@ export default function Home() {
       <div key={tab} className="animate-fade-in">
         {tab === "about" && <AboutMe />}
         {tab === "experience" && <Experience />}
+        {tab === "projects" && <Projects />}
         {tab === "education" && <Education />}
       </div>
     </main>
