@@ -3,6 +3,7 @@ const projects = [
     name: "Homelab",
     status: "Active",
     repo: "https://github.com/Kakuhiry/homelab-charts",
+    diagram: "https://claude.ai/code/artifact/bf7143b8-e456-425b-9b95-0399b443cd24",
     description:
       "Production-grade multi-node k3s cluster managed entirely through GitOps. Every workload, configuration, and infrastructure change is a pull request against a single Helm charts repository tracked in ArgoCD.",
     nodes: [
@@ -38,14 +39,26 @@ export default function Projects() {
               <span className="px-2 py-0.5 text-xs font-mono border border-black rounded-full text-black">
                 {project.status}
               </span>
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-auto font-mono text-xs text-zinc-400 hover:text-black transition-colors"
-              >
-                homelab-charts ↗
-              </a>
+              <div className="ml-auto flex items-center gap-3">
+                {project.diagram && (
+                  <a
+                    href={project.diagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-xs text-zinc-400 hover:text-black transition-colors"
+                  >
+                    diagram ↗
+                  </a>
+                )}
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-xs text-zinc-400 hover:text-black transition-colors"
+                >
+                  homelab-charts ↗
+                </a>
+              </div>
             </div>
 
             <p className="text-zinc-500 text-sm leading-relaxed mb-6">{project.description}</p>
